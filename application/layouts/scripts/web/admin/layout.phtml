@@ -1,0 +1,65 @@
+<?= $this->doctype(); ?>
+<html lang="en">
+    <head>
+        <base href="<?= $this->baseUrl(); ?>/" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <?= $this->headMeta(); ?>
+        <title>BBA NBMC Admin</title>
+        <?= $this->headStyle(); ?>
+        <?= $this->headLink()
+                ->appendStylesheet($this->baseUrl('js/admin/css/admin.css')); ?>
+
+        <style type="text/css">
+            /* bring in the claro theme */
+            @import "https://ajax.googleapis.com/ajax/libs/dojo/1.7.3/dijit/themes/claro/claro.css";
+            @import "https://ajax.googleapis.com/ajax/libs/dojo/1.7.3/dojox/grid/enhanced/resources/claro/EnhancedGrid.css";
+            @import "https://ajax.googleapis.com/ajax/libs/dojo/1.7.3/dojox/grid/enhanced/resources/EnhancedGrid_rtl.css";
+        </style>
+
+        <script type="text/javascript">
+            var baseUrl = '<?= $this->baseUrl(); ?>';
+        </script>
+
+        <script type="text/javascript">
+            var dojoConfig = {
+                async: true,
+                parseOnLoad: true,
+                packages: [
+                    {
+                        name: "admin",
+                        location: "<?= $this->baseUrl('js/admin'); ?>"
+                    }
+                ]
+            };
+        </script>
+
+        <!-- Bootstrap Dojo From Google's CDN -->
+        <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/dojo/1.7.3/dojo/dojo.js">
+        </script>
+
+        <?= $this->headScript(); ?>
+    </head>
+    <body class="claro">
+        <div id="loader">
+            <div id="loaderInner"></div>
+        </div>
+
+        <div id="appLayout"
+             data-dojo-type="dijit.layout.BorderContainer"
+             data-dojo-props="design: 'headline', gutters: 'false'">
+
+            <?= $this->navigation()->dojoMenuBar()->render(); ?>
+
+            <div data-dojo-type="dijit.layout.BorderContainer"
+                 data-dojo-props="design: 'headline', region: 'center'">
+
+                <?= $this->Layout()->content; ?>
+
+            </div>
+
+        </div>
+        <div id="dialog"></div>
+        <div id="errorDialog"></div>
+    </body>
+</html>

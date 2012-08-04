@@ -1,0 +1,19 @@
+.nivo-caption {	
+	background-color:#fff;
+	filter: alpha(opacity=70);
+}
+	
+.fancyinput {
+	border: solid 1px #ddd;
+	outline: 0;
+}
+
+.gray_box {
+	border:1px solid #ddd;
+}
+.jqueryslidemenu ul li ul {
+	border:1px solid #dadada;
+}
+.squared {
+	border-bottom:1px solid #CCC !important;
+}

@@ -1,0 +1,42 @@
+.search, .fancyinput {
+	width: 222px;
+	height: 20px;
+	line-height:20px;
+	background-size: 100% 100%;
+	background-image: url(../../images/web/ie/search_bg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	border:none !important;
+}
+
+.squared {
+	background-image: url(../../images/web/ie/search_go.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height:38px;
+	width:38px;
+	position: relative;
+	border:none !important;
+	border-right:1px solid #CCC !important;
+}
+
+.squared:hover {
+	background-image: url(../../images/web/ie/search_go_hover.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.fancyinputarea {
+	background-size: 100% 100%;
+	background-image: url(../../images/web/ie/textarea_bg.png);
+	background-repeat: no-repeat;
+}
+
+.fancybutton, a.button {
+	background-size: 100% 100%;
+	background-image: url(../../images/web/ie/submit_bg.png);
+}
+.fancybutton:hover,  a.button:hover {
+	background-size: 100% 100%;
+	background-image: url(../../images/web/ie/submit_bg_hover.png);
+}

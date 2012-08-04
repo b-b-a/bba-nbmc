@@ -1,0 +1,15 @@
+<?
+$csv = '';
+
+foreach ($this->data as $row):
+    $record = $row->toArray();
+    $temp = '';
+    foreach ($record as $key => $value):
+        $temp .= $value . ',';
+    endforeach;
+    
+    $csv .= substr($temp, 0, -1) . "\n";
+endforeach;
+
+echo $csv;
+?>

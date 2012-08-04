@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>BBA - New Business Master Class</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <? if ($this->numLeft > 0): ?>
+        <meta http-equiv="refresh" content="5">
+        <? endif; ?>
+    </head>
+        <style type="text/css">
+
+        </style>
+    <body>
+        <div>
+            <p>sent:</p>
+            <p>EmailId: <?= $this->emailId; ?></p>
+            <p>Email: <?= $this->email; ?></p>
+            <p>Emails Left In Queue: <?= $this->numLeft; ?></p>
+        </div>
+    </body>
+</html>

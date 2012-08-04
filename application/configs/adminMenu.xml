@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <nav>
+        <nbmc>
+            <label>NBMC</label>
+            <data-dojo-props>
+                <onClick>sf.menuClick</onClick>
+            </data-dojo-props>
+            <route>nbmc_admin</route>
+            <resource>User</resource>
+        </nbmc>
+        <users>
+            <label>Users</label>
+            <data-dojo-props>
+                <onClick>sf.menuClick</onClick>
+            </data-dojo-props>
+            <route>user_admin</route>
+            <resource>Admin</resource>
+        </users>
+        <logout>
+            <label>Logout</label>
+            <data-dojo-props>
+                <onClick>sf.menuClick</onClick>
+            </data-dojo-props>
+            <action>logout</action>
+            <route>user</route>
+            <resource>User</resource>
+        </logout>
+    </nav>
+</config>

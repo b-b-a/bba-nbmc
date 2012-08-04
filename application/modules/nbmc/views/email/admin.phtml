@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>New Business Masterclass registration [NBMC<?= $this->row->invoiceNumber; ?>]</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <style type="text/css">
+            body {
+                margin:0px;
+                padding:0px;
+                width:100%;
+                height:100%;
+                background-color: #fff;
+                background-repeat: repeat-x;
+                background-position: center top;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+}
+            sub {
+                font-size: 75%;
+                bottom: -0.25em;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline
+            }
+            #main {
+                font-family: 'DroidSansRegular', Arial, sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+                font-style:normal;
+                font-variant:normal;
+                font-weight:normal;
+                color:#666;
+                width:100%;
+            }
+            .hr {
+                margin-top:20px;
+                margin-bottom:20px;
+                background-repeat: repeat-x;
+                background-position: center center;
+                height:3px;
+                width:100%;
+            }
+            a {
+                text-decoration:none;
+            }
+            a {
+                -webkit-transition: all 0.4s ease-in-out;
+                -moz-transition: all 0.4s ease-in-out;
+                -ms-transition: all 0.4s ease-in-out;
+                -o-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;
+            }
+            a:hover {
+                color:#000;
+            }
+            :focus, a:focus {
+                outline:none;
+            }
+            :active, a:active {
+                outline:none;
+            }
+            :focus {
+                -moz-outline-style:none;
+            }
+            h1 {
+                font-size: 24px;
+                line-height:25px;
+            }
+            h2 {
+                font-size: 22px;
+                line-height:23px;
+            }
+            h4 {
+                font-size: 18px;
+                line-height:19px;
+            }
+            h5 {
+                font-size: 16px;
+                line-height:17px;
+            }
+            h1, h2, h4, h5 {
+                color:#000;
+                font-family: 'DroidSerifRegular', Arial, sans-serif;
+                font-style:normal;
+                font-variant:normal;
+                font-weight:normal;
+            }
+            h1, h2, h4, h5 {
+                margin-bottom: 10px;
+            }
+            p {
+                margin-top:10px;
+            }
+            p:first-child {
+                margin:0;
+            }
+            #page_wrap {
+                width: 800px;
+                margin-top:30px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .logo a {
+
+            }
+
+            #logoH1 {
+                line-height: 50px;
+                font-size: 18px;
+                vertical-align: middle;
+            }
+            #intro {
+                margin-bottom:20px;
+            }
+            #intro h2 {
+                margin:0;
+                margin-bottom: 10px;
+            }
+            #footer {
+                padding-bottom:30px;
+            }
+            #footer p {
+                margin-top:20px;
+            }
+            ul li, ol li {
+                margin-top:10px;
+            }
+
+            .text_align_center {
+                text-align:center;
+            }
+            sup {
+                font-size: 8px;
+            }
+            a.button {
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                cursor: pointer;
+                display: inline-block;
+                padding-bottom: 3px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 3px;
+
+            }
+            a.button:hover {
+                -webkit-transition: all 0.4s ease-in-out;
+                -moz-transition: all 0.4s ease-in-out;
+                -ms-transition: all 0.4s ease-in-out;
+                -o-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;
+            }
+            h1 a, h2 a, h4 a, h5 a {
+                color:#000;
+            }
+            h1 a:hover, h2 a:hover, h4 a:hover, h5 a:hover {
+                color:#1a88c1;
+            }
+            a {
+                color:#1a88c1;
+            }
+            .theme_color {
+                color:#1a88c1;
+            }
+            a.button {
+                border: 1px solid #eee;
+                color:#666;
+                text-shadow: 1px 1px 0px #fff;
+                background-image: -moz-linear-gradient(
+                    top,
+                    #FBFBFB,
+                    #FFFFFF 41%,
+                    #FBFBFB 90%,
+                    #D7DBE1
+                );
+                background-image: -webkit-gradient(
+                    linear,
+                    left top, left bottom,
+                    from(#FBFBFB),
+                    to(#D7DBE1),
+                    color-stop(0.41, #FFFFFF),
+                    color-stop(0.9, #FBFBFB)
+                );
+            }
+            a.button:hover {
+                background-image: -moz-linear-gradient(
+                    top,
+                    #FFF,
+                    #FFFFFF 95%,
+                    #1a88c1
+                );
+                background-image: -webkit-gradient(
+                    linear,
+                    left top, left bottom,
+                    from(#FFF),
+                    to(#1a88c1),
+                    color-stop(0.95, #FFFFFF)
+
+                );
+            }
+            a.button:hover {
+                color:#1a88c1;
+            }
+
+            img {
+                border: 0px;
+                color: transparent;
+                font-size: 0;
+                vertical-align: middle;
+                -ms-interpolation-mode: bicubic;
+            }
+
+            th {
+                text-align: right;
+                padding-rigth: 20px;
+            }
+        </style>
+        <table id="main"><tr><td>
+        <table id="page_wrap">
+            <tr valign="middle">
+                <td class="logo" valign="middle">
+                    <a href="https://www.newbusinessmasterclass.co.uk">
+                        <img src="file://<?= $this->route; ?>/images/web/bba-link-up-logo.png" />
+                    </a>&nbsp;
+                    <span id="logoH1" class="theme_color">
+                        Networking Events
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>A New Booking has been made with details:</p>
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <td><?= $this->row->getFullName(); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td><?= $this->row->email; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Telephone:</th>
+                        <td><?= $this->row->telephone; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Company:</th>
+                        <td><?= $this->row->company; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Address Line 1:</th>
+                        <td><?= $this->row->address1; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Address Line 2:</th>
+                        <td><?= $this->row->address2; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Postcode:</th>
+                        <td><?= $this->row->postcode; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Number Attending:</th>
+                        <td><?= $this->row->numberAttending; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Comments:</th>
+                        <td><?= $this->row->comments; ?></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+        </table>
+        </td></tr></table>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<?php
+$log = Zend_Registry::get('log');
+
+$html = '<div id="header" class="edgePanel" data-dojo-type="dijit.MenuBar" data-dojo-props="region:\'top\', gutters: \'false\'">';
+
+foreach ($this->container as $page) {
+
+    if ($page->isVisible() && $this->navigation()->accept($page)) {
+        $log->info($page->getParent());
+
+        //if ($page->count()) {
+            //$log->info($page->getChildren());
+        //} else {
+            $properties = $page->getCustomProperties();
+
+            $html .= '<div data-dojo-type="dijit.MenuBarItem" data-dojo-props="';
+
+            if ($properties['data-dojo-props']) {
+                foreach($properties['data-dojo-props'] as $key => $value) {
+                    $html .= $key . ':' . $value;
+                }
+            }
+
+            $html .= '">';
+            $html .= '<a href="' . $page->getHref() . '">' . $page->getLabel() . '</a>';
+            $html .= '</div>';
+        //}
+    }
+}
+
+$html .= '</div>';
+
+echo $html;
+
+?>

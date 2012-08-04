@@ -1,0 +1,99 @@
+/*
+    Document   : admin
+    Created on : 10-Aug-2011, 11:02:27
+    Author     : shaun
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#loader {
+	padding:0;
+	margin:0;
+	position:absolute;
+	top:0; left:0;
+	width:100%;
+    height:100%;
+	background:#efefef;
+	opacity: 0.98;
+	z-index:999;
+	vertical-align:middle;
+}
+
+#loaderInner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 305px;
+	height: 126px;
+	margin-top: -63px;
+	margin-left: -152.5px;
+	background-image: url('../images/logo.png');
+	background-repeat: no-repeat;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    background: #eee url('../images/adminBodyBg.png') repeat-x top left;
+    font-size: 10pt;
+}
+
+a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+a:hover {
+    color:#000;
+}
+
+#appLayout {
+    height: 100%;
+}
+
+.contentPanelRight {
+    width: 33%;
+}
+
+.claro table.dijitCalendarContainer {
+    margin: 5px auto;
+}
+
+.dojoxGrid table {
+    margin: 0;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+th {
+    text-align: right;
+}
+
+/**
+ * Forms
+ */
+
+.zend_form {
+	width : 600px;
+}
+
+.zend_form .submitElement {
+	text-align: center;
+} 
+
+.required:before {
+    content: '*';
+    color: #f00;
+}
+

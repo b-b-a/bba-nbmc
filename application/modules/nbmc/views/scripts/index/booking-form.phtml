@@ -1,0 +1,18 @@
+<? $this->headMeta()->appendName('decription', 'New Business Master Class Booking Form'); ?>
+<? $this->placeholder('intro')->captureStart(); ?>
+<h2 class="left">
+    Booking <span class="theme_color">Form</span>
+</h2>
+<h2 class="phone">Call Us: <span class="theme_color">0845</span>-838-0284 </h2>
+<? $this->placeholder('intro')->captureEnd(); ?>
+
+<div id="main" class="grid_8 alpha">
+    <div class="grid_8">
+
+        <h4>Please fill out this form to register your interest<br> in the
+            <span class="theme_color">New Business Master Class</span></H4>
+        <?= $this->registerForm; ?>
+    </div>
+</div>
+
+<?= $this->render('index/_sidebar.phtml'); ?>

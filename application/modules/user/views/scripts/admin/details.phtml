@@ -1,0 +1,15 @@
+<table>
+    <caption>User Details (<?= $this->user->userId; ?>)</caption>
+    <tr>
+        <th>Name:</th>
+        <td><?= $this->user->getFullName(); ?></td>
+    </tr>
+    <tr>
+        <th>Username:</th>
+        <td><?= $this->user->username; ?></td>
+    </tr>
+    <tr>
+        <th>Role:</th>
+        <td><?= $this->user->role; ?></td>
+    </tr>
+</table>

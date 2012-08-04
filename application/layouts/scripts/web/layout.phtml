@@ -1,0 +1,171 @@
+<?= $this->docType(); ?>
+<html lang="en">
+<head>
+    <base href="<?= $this->baseUrl(); ?>/" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="keywords" content="Rob Brown,Grant Leboff,New Business Masterclass,Wyboston Lakes,BBA,Link-up" />
+    <?= $this->headTitle('BBA - New Business Master Class'); ?>
+    <meta name="robots" content="index, follow">
+    <?= $this->headMeta(); ?>
+
+    <?= $this->headLink()
+            ->headLink(array(
+                'rel'   => 'sitemap',
+                'href'  => $this->baseUrl('sitemap.xml'),
+                'title' => 'Sitemap'
+            ))
+            ->headLink(array(
+                'rel'   => 'shortcut icon',
+                'href'  => $this->baseUrl('images/web/favicon.png')
+            ))
+            ->offsetSetStylesheet(1, $this->baseUrl('css/web/style.css'))
+            ->offsetSetStylesheet(2, $this->baseUrl('css/web/color.css'))
+            ->offsetSetStylesheet(3, $this->baseUrl('css/web/fonts/droid/stylesheet.css'))
+            ->offsetSetStylesheet(4, $this->baseUrl('css/web/ieforms.css'), 'screen', 'IE')
+            ->offsetSetStylesheet(5, $this->baseUrl('css/web/ie8.css'), 'screen', 'lte IE 8');
+    ?>
+
+    <?= $this->headScript()
+            ->offsetSetFile(1, 'https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js', 'text/javascript')
+            ->offsetSetFile(2, 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js', 'text/javascript')
+            ->offsetSetFile(3, $this->baseUrl('js/web/custom.js'), 'text/javascript')
+            ->offsetSetFile(4, $this->baseUrl('js/web/jquery.nivo.slider.js'), 'text/javascript')
+            ->offsetSetFile(5, $this->baseUrl('js/web/jquery.prettyPhoto.js'), 'text/javascript')
+            ->offsetSetFile(6, $this->baseUrl('js/web/jquery.quicksand.js'), 'text/javascript')
+            ->offsetSetFile(7, $this->baseUrl('js/web/jflickrfeed.js'), 'text/javascript')
+            ->offsetSetFile(8, $this->baseUrl('js/web/twitter.js'), 'text/javascript')
+            ->offsetSetFile(9, $this->baseUrl('js/web/jqueryslidemenu.js'), 'text/javascript')
+            ->offsetSetFile(10, $this->baseUrl('js/web/hoverable.js'), 'text/javascript')
+            ->offsetSetFile(11, $this->baseUrl('js/web/touchable.js'), 'text/javascript')
+            ->offsetSetFile(12, $this->baseUrl('js/web/video.js'), 'text/javascript')
+            ->offsetSetFile(13, 'https://html5shiv.googlecode.com/svn/trunk/html5.js', 'text/javascript', array(
+                'conditional' => 'IE'
+            )); ?>
+</head>
+<body>
+    <!--start page_wrap-->
+    <div id="page_wrap" class="container_12 clearfix top">
+
+        <!--start header-->
+        <header id="header" class="grid_12 clearfix">
+
+            <!--start logo-->
+            <div id="logo" class="grid_6 alpha">
+                <a href="<?= $this->baseUrl(); ?>">
+                    <img src="<?= $this->baseUrl('images/web/bba-link-up-logo.png'); ?>" />
+                </a>
+                <h1>
+                    <span class="theme_color">
+                        Networking Events
+                    </span>
+                </h1>
+                <!--<h2>The Business Association with a difference.</h2>-->
+            </div>
+            <!--end logo-->
+
+            <!--start navigation-->
+            <div id="nav" class="grid_6 push_6 omega jqueryslidemenu">
+               <?= $this->navigation()->sfMenu(); ?>
+            </div>
+            <!--end navigation-->
+
+        </header>
+        <!--end header-->
+
+        <div class="clear"></div>
+
+        <?= $this->placeholder('slider'); ?>
+
+    <div class="clear"></div>
+
+        <!--start intro text-->
+        <section id="intro" class="grid_12">
+            <?= $this->placeholder('intro'); ?>
+        </section>
+        <!--end intro text-->
+
+        <div class="clear"></div>
+
+        <!--start content-->
+        <section id="content" class="grid_12 clearfix">
+            <?= $this->Layout()->content; ?>
+        </section>
+        <!--end content-->
+
+        <div class="clear"></div>
+
+        <!--start footer-->
+        <footer id="footer" class="grid_12">
+
+            <!--contact here-->
+            <div class="grid_4 alpha">
+                <h5>Contact Us</h5>
+                <p>3A Market Square,
+                <br>
+                Sandy, Bedfordshire SG19 1HT</p>
+                <p><b>Tel:</b> 0845-838-0284
+                <br>
+                <b>Fax:</b> 0845-838-0286
+                <br>
+                <b>E-mail:</b> <a href="mailto:bookings@newbusinessmasterclass.co.uk">bookings@newbusinessmasterclass.co.uk</a>
+                <br>
+
+                <p>A company incorporated in England.
+                <br>
+                Registered number 3198320
+                <br>
+                VAT: GB 660 5521 51</p>
+            </div>
+
+            <!--twitter area-->
+            <div class="grid_5">
+                <h5>Latest Tweet</h5>
+                <ul class="tweet"></ul>
+            </div>
+
+            <!--social icons-->
+            <div class="grid_3 omega">
+                <h5>Stay In Touch</h5>
+                    <ul class="social">
+                    <li>
+                        <a href="https://twitter.com/B2BA_UK">
+                            <img src="<?= $this->baseUrl('images/web/icons/square_twitter_24.png'); ?>" width="24" height="24" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+
+				<hr>
+
+				<h5>Secured By SSL</h5>
+				<a href="//www.PositiveSSL.com" title="SSL Certificate Authority" style="font-family: arial; font-size: 10px; text-decoration: none;">
+                    <img src="<?= $this->baseUrl('images/PositiveSSL_tl_trans.gif'); ?>" alt="SSL Certificate Authority" title="SSL Certificate Authority" border="0" />
+                    <br />SSL Certificate Authority</a>
+            </div>
+
+            <div class="clear"></div>
+
+            <!--start subfooter-->
+            <div id="sub_footer" class="grid_12 alpha">
+
+                <div class="grid_6 alpha">
+                    <p>
+                        &copy; Copyright <?= date('Y'); ?>  Business to Business Associates.
+                        Designed & Hosted by <a href="http://www.shaunfreeman.co.uk">Shaun Freeman</a>
+                    </p>
+                </div>
+
+                <div class="grid_6 omega align_right">
+                    <p><a href="#top">Back to Top</a></p>
+                </div>
+            </div>
+            <!--end subfooter-->
+
+        </footer>
+        <!--end footer-->
+
+        <div class="clear"></div>
+
+    </div>
+    <!--end page_wrap-->
+</body>
+</html>

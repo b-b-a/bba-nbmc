@@ -1,0 +1,16 @@
+<div id="login"
+     data-dojo-type="dijit.Dialog"
+     data-dojo-id="login"
+     data-dojo-props="title:'Admin Login'">
+    <div class="dijitDialogPaneContentArea">
+        <div id="loginWrap">
+            <h3 style="text-align:center;">Please Login</h3>
+            <?= $this->loginForm; ?>
+        </div>
+    </div>
+    <script type="dojo/method" data-dojo-event="onHide">
+        this.hide();
+        this.destroyRecursive();
+        return true;
+    </script>
+</div>

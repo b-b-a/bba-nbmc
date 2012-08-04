@@ -1,0 +1,42 @@
+<?php $this->headScript()->captureStart() ?>
+    var sfModule = 'User';
+    require(["admin/User"]);
+<?php $this->headScript()->captureEnd() ?>
+
+<div data-dojo-type="dijit.layout.ContentPane"
+        data-dojo-props="region: 'top'">
+    <form data-dojo-type="dijit.form.Form" id="Search">
+    	<input type="text" id="user" name="user"
+    		   data-dojo-type="dijit.form.TextBox"
+    		   data-dojo-params="label: 'Search Term:'" />
+        <button data-dojo-type="dijit.form.Button"
+                type="submit"
+                id="">Search</button>
+         <button data-dojo-type="dijit.form.Button"
+                type="reset"
+                id="">Reset</button>
+    </form>
+</div>
+
+<div data-dojo-type="dijit.layout.ContentPane"
+        data-dojo-props="region: 'center'"
+        class="contentPanels">
+    <div id="userGrid"></div>
+    <div data-dojo-type="dijit.Menu" data-dojo-id="headerMenu" id="headerMenu" style="display: none;">
+        <div data-dojo-type="dojox.widget.PlaceholderMenuItem" label="GridColumns"></div>
+    </div>
+    <div data-dojo-type="dijit.Menu" id="rowMenu" style="display: none;">
+        <div data-dojo-type="dijit.MenuItem" id="userAdd">New User</div>
+        <div data-dojo-type="dijit.MenuItem" id="userView">View User</div>
+        <div data-dojo-type="dijit.MenuItem" id="userEdit">Edit User</div>
+        <div data-dojo-type="dijit.MenuItem" id="userDelete">Delete User</div>
+    </div>
+    </div>
+</div>
+
+<div data-dojo-type="dijit.layout.ContentPane"
+     data-dojo-props="region: 'right', splitter: true"
+     class="contentPanels contentPanelRight"
+     id="gridRowDetails">
+    <h4>Click on a row to see details.</h4>
+</div>

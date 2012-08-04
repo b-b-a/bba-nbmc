@@ -1,0 +1,122 @@
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color:#000;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	color:#1a88c1;
+}
+a {
+	color:#1a88c1;
+}
+#nav a.active {
+	color:#1a88c1;
+}
+.nivo-caption a {
+	color:#1a88c1;
+}
+ul.sidebar-comment a:hover, ul.sidebar-post a:hover, ul.sidebar-categories a:hover, ul.sidebar-archive a:hover {
+	color:#1a88c1;
+}
+.older-posts a:hover {
+	color:#1a88c1;
+}
+a.post-date:hover, .tag-links a:hover, .cat-links a:hover, .comment-links a:hover, .comment-time a:hover {
+	color:#1a88c1;
+}
+.highlight1 {
+	background:#1a88c1;
+}
+.dropcap2 {
+	background:#1a88c1;
+}
+
+.theme_color {
+	color:#1a88c1;
+}
+input.button {
+	background-color: #1a88c1;
+}
+.valmsg, .error {
+	color: #1a88c1;
+}
+blockquote.style2 {
+	background-color: #1a88c1;
+}
+.error404 {
+	background-image: url(../../images/web/404-blue.png);
+	background-position: center top;
+	height:37px;
+	background-repeat: no-repeat;
+}
+.fancybutton {
+	/* Legacy browsers */
+	border: 1px solid #FBFBFB;
+	color:#666;
+	text-shadow: 1px 1px 0px #fff;
+	/* Recent browsers */
+			/* Firefox */
+			background-image: -moz-linear-gradient(
+				top,
+				#FBFBFB,
+				#FFFFFF 41%,
+				#FBFBFB 90%,
+				#D7DBE1
+			);
+	/* Safari & Co */
+			background-image: -webkit-gradient(
+				linear,
+				left top, left bottom,
+				from(#FBFBFB),
+				to(#D7DBE1),
+				color-stop(0.41, #FFFFFF),
+				color-stop(0.9, #FBFBFB)
+			);
+
+}
+ a.button {
+	/* Legacy browsers */
+	border: 1px solid #eeeeee;
+	color:#666;
+	text-shadow: 1px 1px 0px #fff;
+	/* Recent browsers */
+			/* Firefox */
+			background-image: -moz-linear-gradient(
+				top,
+				#FBFBFB,
+				#FFFFFF 41%,
+				#FBFBFB 90%,
+				#D7DBE1
+			);
+	/* Safari & Co */
+			background-image: -webkit-gradient(
+				linear,
+				left top, left bottom,
+				from(#FBFBFB),
+				to(#D7DBE1),
+				color-stop(0.41, #FFFFFF),
+				color-stop(0.9, #FBFBFB)
+			);
+
+}
+.fancybutton:hover, a.button:hover {
+	/* Recent browsers */
+			/* Firefox */
+			background-image: -moz-linear-gradient(
+				top,
+				#FFF,
+				#FFFFFF 95%,
+				#1a88c1
+			);
+	/* Safari & Co */
+			background-image: -webkit-gradient(
+				linear,
+				left top, left bottom,
+				from(#FFF),
+				to(#1a88c1),
+				color-stop(0.95, #FFFFFF)
+
+			);
+}
+.fancybutton:hover, a.button:hover {
+color:#1a88c1;
+
+}

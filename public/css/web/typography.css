@@ -1,0 +1,120 @@
+/*
+  960 Grid System ~ Text CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: 'DroidSansRegular', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	background-color: #fff;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	color:#666666;
+	background-image: url('../../images/web/bg.jpg');
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+hr {
+	clear: both;
+	height: 0;
+	margin-top:30px;
+	margin-bottom:30px;
+	background-image: url('../../images/web/hr.png');
+	background-repeat: repeat-x;
+	background-position: center center;
+	height:2px;
+}
+a {
+	text-decoration:none;
+}
+a {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+a:hover {
+	color:#000;
+}
+:focus, a:focus {
+	outline:none;
+}
+:active, a:active {
+	outline:none;
+}
+:focus {
+	-moz-outline-style:none;
+}
+strong {
+	font-family: 'DroidSansBold', Arial, sans-serif;
+	font-weight:400;
+}
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+	font-size: 24px;
+	line-height:25px;
+}
+h2 {
+	font-size: 22px;
+	line-height:23px;
+}
+h2.phone {
+	font-size:20px;
+	line-height:23px;
+	float:right;
+}
+h3 {
+	font-size: 20px;
+	line-height:21px;
+}
+h4 {
+	font-size: 18px;
+	line-height:19px;
+}
+h5 {
+	font-size: 16px;
+	line-height:17px;
+}
+h6 {
+	font-size: 14px;
+	line-height:15px;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:#000;
+	font-family: 'DroidSerifRegular', Arial, sans-serif;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+}
+blockquote.style1 {
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	font-size:13px;
+	font-family: 'DroidSerifItalic', Arial, sans-serif;
+}
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 10px;
+}
+p {
+	margin-top:10px;
+}
+p:first-child {
+	margin:0;
+}

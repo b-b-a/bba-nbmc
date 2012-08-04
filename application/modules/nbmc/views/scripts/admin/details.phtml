@@ -1,0 +1,55 @@
+<table>
+    <caption>NBMC Details (<?= $this->nbmc->nbmcId; ?>)</caption>
+     <tr>
+        <th>Invoice Number:</th>
+        <td><?= $this->nbmc->getInvoiceNumber(); ?></td>
+    </tr>
+    <tr>
+        <th>Name:</th>
+        <td><?= $this->nbmc->getFullName(); ?></td>
+    </tr>
+    <tr>
+        <th>Email:</th>
+        <td><?= $this->nbmc->email; ?></td>
+    </tr>
+    <tr>
+        <th>Telephone:</th>
+        <td><?= $this->nbmc->telephone; ?></td>
+    </tr>
+    <tr>
+        <th>Company:</th>
+        <td><?= $this->nbmc->company; ?></td>
+    </tr>
+    <tr>
+        <th>Address Line 1:</th>
+        <td><?= $this->nbmc->address1; ?></td>
+    </tr>
+    <tr>
+        <th>Address Line 2:</th>
+        <td><?= $this->nbmc->address2; ?></td>
+    </tr>
+    <tr>
+        <th>Postcode:</th>
+        <td><?= $this->nbmc->postcode; ?></td>
+    </tr>
+    <tr>
+        <th>Number Attending:</th>
+        <td><?= $this->nbmc->numberAttending; ?></td>
+    </tr>
+    <tr>
+        <th>Comments:</th>
+        <td><?= $this->nbmc->comments; ?></td>
+    </tr>
+    <tr>
+        <th>ProForma Invoice Sent:</th>
+        <td><?= $this->nbmc->getProFormaInvoiceSent(); ?></td>
+    </tr>
+    <tr>
+        <th>Recieied Payment:</th>
+        <td><?= $this->nbmc->getRecieiedPayment(); ?></td>
+    </tr>
+    <tr>
+        <th>Invoice Sent:</th>
+        <td><?= $this->nbmc->getInvoiceSent(); ?></td>
+    </tr>
+</table>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <nav>
+        <home>
+            <label>Home</label>
+            <action>index</action>
+            <controller>index</controller>
+            <route>nbmc</route>
+        </home>
+        <register>
+            <label>Booking Form</label>
+            <action>booking-form</action>
+            <controller>index</controller>
+            <route>nbmc</route>
+        </register>
+        <admin>
+            <label>Admin</label>
+            <action>index</action>
+            <controller>admin</controller>
+            <module>nbmc</module>
+            <resource>User</resource>
+            <reset_params>true</reset_params>
+            <route>nbmc_admin</route>
+        </admin>
+        <login>
+            <label>Log In</label>
+            <action>login</action>
+            <controller>index</controller>
+            <route>user</route>
+            <module>user</module>
+            <resource>Guest</resource>
+        </login>
+        <logout>
+            <label>Log Out</label>
+            <action>logout</action>
+            <route>user</route>
+            <resource>User</resource>
+        </logout>
+    </nav>
+</config>
